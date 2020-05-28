@@ -6,7 +6,7 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    SvipeAuth.multiply(3, 7).then(setResult);
+    SvipeAuth.scanDocument(3).then(setResult);
   }, []);
 
   return (

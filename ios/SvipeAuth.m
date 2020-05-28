@@ -7,18 +7,18 @@ RCT_EXPORT_MODULE()
 SvipeAuthenticator *auth;
 // Example method
 // See // https://facebook.github.io/react-native/docs/native-modules-ios
-RCT_REMAP_METHOD(multiply,
-                 multiplyWithA:(nonnull NSNumber*)a withB:(nonnull NSNumber*)b
+RCT_REMAP_METHOD(scanDocument,
+                 challenge:(nonnull NSNumber*)a
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
     auth = [[SvipeAuthenticator alloc] init];
 
     [auth scanDocument:^(Passport *passport, NSError *error){
-        NSNumber *result = @([a floatValue] * [b floatValue]);
+        NSDictionary<NSString *,id> *json = [passport json];
+        NSNumber *result = @([a floatValue]);
         resolve(result);
     }];
-    
     
 }
 
