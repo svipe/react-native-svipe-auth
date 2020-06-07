@@ -5,7 +5,7 @@ Read MRTD
 ## Installation
 
 ```sh
-npm install react-native-svipe-auth
+npm install @svipe/react-native-svipe-auth
 ```
 
 ## Usage
@@ -15,12 +15,8 @@ import SvipeAuth from "react-native-svipe-auth";
 
 // ...
 
-const result = await SvipeAuth.multiply(3, 7);
+const result = await SvipeAuth.scanDocument(4711); // Returns JSON
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
