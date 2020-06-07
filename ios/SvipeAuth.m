@@ -14,13 +14,17 @@ RCT_REMAP_METHOD(scanDocument,
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
     auth = [[Authenticator alloc] init];
-
-    [auth scanDocument:^(Passport *passport, NSError *error){
-        NSDictionary<NSString *,id> *json = [passport json];
-        NSNumber *result = @([a floatValue]);
-        resolve(result);
-    }];
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [auth scanDocument:^(Passport *passport, NSError *error) {
+            NSLog(@"%@", passport, error);
+            if (error == nil) {
+                NSDictionary<NSString *,id> *json = [passport json];
+                resolve(json);
+            } else {
+                 reject(@"error", @"error description", error);
+            }
+        }];
+    });
 }
 
 @end

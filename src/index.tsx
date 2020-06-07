@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type SvipeAuthType = {
-  scanDocument(challenge: number): Promise<number>;
+  scanDocument(challenge: number): Promise<object>;
 };
 
 const { SvipeAuth } = NativeModules;
