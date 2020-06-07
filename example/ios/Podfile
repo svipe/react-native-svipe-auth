@@ -55,63 +55,37 @@ target 'SvipeAuthExample' do
 
   pod 'react-native-svipe-auth', :path => '../..'
   
-  pod 'SvipeKit', :path => '../../..'
-  
-  pod 'CertKit',  :path => '../../../CertKit'
-  
-  
-  #pod 'SvipeKit', :git => 'https://github.com/svipe/SvipeKit.git', :branch => :master
-
-  pod 'Credstore',  :path => '../../../Credstore'#
-  #pod 'Credstore', :git => 'https://github.com/svipe/svipe-ios-credstore.git', :branch => :master
-
-  pod 'PotentCodables',  :path => '../../../Credstore/PotentCodables/'
-  #pod 'PotentCodables', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
-  pod 'PotentASN1',  :path => '../../../Credstore/PotentCodables/'
-  #pod 'PotentASN1', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
-  pod 'PotentCBOR',  :path => '../../../Credstore/PotentCodables/'
-  #pod 'PotentCBOR', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
-  pod 'PotentJSON',  :path => '../../../Credstore/PotentCodables/'
-  #pod 'PotentJSON', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
-   
-  pod 'Shield',  :path => '../../../Credstore/Shield'
-  #pod 'Shield', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldCrypto',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldCrypto', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldSecurity',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldSecurity', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldPKCS',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldPKCS', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldX500',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldX500', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldX509',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldX509', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-  pod 'ShieldOID',  :path => '../../../Credstore/Shield'
-  #pod 'ShieldOID', :git => 'https://github.com/svipe/Shield.git', :branch => :master
-
-  pod 'OrderedDictionary',  :path => '../../../Credstore/OrderedDictionary'
-  #pod 'OrderedDictionary', :git => 'https://github.com/svipe/OrderedDictionary.git', :branch => :master
-
-  
-  pod 'SwiftQRScanner', :git => ‘https://github.com/vinodiOS/SwiftQRScanner’
-  #pod 'WebAuthnKit',  :path => '../WebAuthnKit-iOS'
-  
-  #pod 'WebAuthnKit', :git => 'https://github.com/svipe/WebAuthnKit-iOS.git', :branch => :develop
-  #pod 'NFCPassportReader', :git => 'https://github.com/svipe/NFCPassportReader.git', :branch => :master
-  pod 'NFCPassportReader',:path => '../../../NFCPassportReader'
+  #private
+  pod 'SvipeKit',  :path => '../../../SvipeKit'
+  pod 'SvipeStore',  :path => '../../../SvipeStore'
+  pod 'SvipeReader',  :path => '../../../SvipeReader'
+  pod 'SvipeCA',  :path => '../../../SvipeCA'
+  pod 'SvipeCommon',  :path => '../../../SvipeCommon'
+  pod 'SvipeMRZ',  :path => '../../../SvipeMRZ'
   pod 'FaceVerifier',  :path => '../../../FaceVerifier'
-  #pod 'FaceVerifier', :git => 'https://github.com/svipe/FaceVerifier.git', :branch => :master
-  #pod 'SwiftyTesseract' , :path => '../SwiftyTesseract'
-  pod 'SwiftyTesseract', :git => 'https://github.com/svipe/SwiftyTesseract.git', :branch => :master
-  
-  #pod 'CommonKit', :git => 'https://github.com/svipe/CommonKit.git', :branch => :master
-  pod 'CommonKit',  :path => '../../../CommonKit'
-  
-  pod 'BluetoothKit', :path => '../../../BluetoothKit'
-  #pod 'BluetoothKit', :git => 'https://github.com/svipe/'BluetoothKit.git', :branch => :master
 
-   pod 'Realm',:modular_headers => true
-   pod 'DeepLinkKit',:modular_headers => true
+  #public
+  pod 'ASN1Decoder',  :path => '../../../ASN1Decoder'
+  #pod 'ASN1Decoder', :git => 'https://github.com/svipe/ASN1Decoder.git', :branch => :master
+  pod 'SwiftyTesseract', :git => 'https://github.com/svipe/SwiftyTesseract.git', :branch => :master
+  pod 'PotentCBOR', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
+  pod 'PotentCodables', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
+  pod 'PotentASN1', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
+  pod 'PotentCBOR', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
+  pod 'PotentJSON', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
+  pod 'BluetoothKit', :git => 'https://github.com/svipe/BluetoothKit.git', :branch => :master
+  pod 'Shield', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldCrypto', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldSecurity', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldPKCS', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldX500', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldX509', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'ShieldOID', :git => 'https://github.com/svipe/Shield.git', :branch => :master
+  pod 'OrderedDictionary', :git => 'https://github.com/svipe/OrderedDictionary.git', :branch => :master
+  pod 'RealmSwift'
+
+  pod 'Realm',:modular_headers => true
+  pod 'DeepLinkKit',:modular_headers => true
 
   use_native_modules!
   

@@ -122,7 +122,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				40C84DBBFA419CA0ED3163DB /* [CP] Embed Pods Frameworks */,
 				6049E970ABDA76A1D4DC6E89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -194,26 +193,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		40C84DBBFA419CA0ED3163DB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SvipeAuthExample/Pods-SvipeAuthExample-frameworks.sh",
-				"${PODS_ROOT}/OpenSSL-Universal/Frameworks/ios/OpenSSL.framework",
-				"${PODS_ROOT}/OpenSSL-Universal/Frameworks/ios/OpenSSL.framework.dSYM",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/OpenSSL.framework.dSYM",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SvipeAuthExample/Pods-SvipeAuthExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6049E970ABDA76A1D4DC6E89 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,74 +200,63 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SvipeAuthExample/Pods-SvipeAuthExample-resources.sh",
-				"${PODS_ROOT}/../../../../CommonKit/CommonKit/iOSDeviceModelMapping.plist",
-				"${PODS_ROOT}/FlagKit/Assets/FlagKit.xcassets",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Acme Logo.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/AppIcon.appiconset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/cancel.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Colors/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Colors/KeyActionContainerViewColor.colorset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/defaultSignature.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/FIDO2 Icon.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/Info Icon.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/Other Icon.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/OTP Icon.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Icons/QR Icon.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/johan.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/johan1.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/klarnabg.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASCogs.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASFace.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASKey.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASMRZ.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASPassport.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASPhone.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASPhoneNew.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/LASSuccess.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/mrzMockup.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/mrzview.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/promotion1.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/promotion2.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/promotion3.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/SamplePassportPhoto.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Scan Key.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Scan QR .imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/sven.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/SvipeLogo.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Warning.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Yubico Full Logo.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets/Yubico Logo.imageset/Contents.json",
-				"${PODS_ROOT}/../../../../SvipeKit/country-codes.json",
-				"${PODS_ROOT}/../../../../SvipeKit/masterList.pem",
-				"${PODS_ROOT}/../../../../SvipeKit/NFCInfo.plist",
-				"${PODS_ROOT}/../../../../SvipeKit/tessdata/ocrb.traineddata",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/ActionSheetView.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/ConsentSheetView.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/EngagementSheetView.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/OriginalActionSheetView.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/PromotionSheetView.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/UI/ActionSheet/TableViewCell.xib",
-				"${PODS_ROOT}/../../../../SvipeKit/Assets/Assets.xcassets",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SwiftQRScanner/SwiftQRScanner.bundle",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/ActionSheetView.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/ConsentSheetView.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/EngagementSheetView.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/OriginalActionSheetView.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/PromotionSheetView.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/ActionSheet/TableViewCell.xib",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Acme Logo.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/AppIcon.appiconset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/cancel.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Colors/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Colors/KeyActionContainerViewColor.colorset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/defaultSignature.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/FIDO2 Icon.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/Info Icon.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/Other Icon.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/OTP Icon.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Icons/QR Icon.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/johan.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/johan1.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/klarnabg.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASCogs.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASFace.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASKey.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASMRZ.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASPassport.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASPhone.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASPhoneNew.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/LASSuccess.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/mrzMockup.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/mrzview.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/promotion1.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/promotion2.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/promotion3.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/SamplePassportPhoto.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Scan Key.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Scan QR .imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/sven.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/SvipeLogo.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Warning.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Yubico Full Logo.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets/Yubico Logo.imageset/Contents.json",
+				"${PODS_ROOT}/../../../../SvipeKit/SvipeKit/Assets/Assets.xcassets",
+				"${PODS_ROOT}/../../../../SvipeMRZ/SvipeMRZ/tessdata/ocrb.traineddata",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/iOSDeviceModelMapping.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/country-codes.json",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/masterList.pem",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NFCInfo.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ocrb.traineddata",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ActionSheetView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConsentSheetView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EngagementSheetView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OriginalActionSheetView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PromotionSheetView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TableViewCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwiftQRScanner.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ocrb.traineddata",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
