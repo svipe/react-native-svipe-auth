@@ -56,13 +56,15 @@ target 'SvipeAuthExample' do
   pod 'react-native-svipe-auth', :path => '../..'
   
   #private
-  pod 'SvipeKit',  :path => '../../../SvipeKit'
-  pod 'SvipeStore',  :path => '../../../SvipeStore'
-  pod 'SvipeReader',  :path => '../../../SvipeReader'
-  pod 'SvipeCA',  :path => '../../../SvipeCA'
-  pod 'SvipeCommon',  :path => '../../../SvipeCommon'
-  pod 'SvipeMRZ',  :path => '../../../SvipeMRZ'
-  pod 'FaceVerifier',  :path => '../../../FaceVerifier'
+  pod 'SvipeStore',  :git => 'https://github.com/svipe/SvipeStoreDist.git', :branch => :master
+  pod 'SvipeReader', :git => 'https://github.com/svipe/SvipeReaderDist.git', :branch => :master
+  pod 'SvipeCA',  :git => 'https://github.com/svipe/SvipeCADist.git', :branch => :master
+  pod 'SvipeCommon',  :git => 'https://github.com/svipe/SvipeCommonDist.git', :branch => :master
+  pod 'FaceVerifier',  :git => 'https://github.com/svipe/FaceVerifierDist.git', :branch => :master
+
+  # semi-private
+  pod 'SvipeKit', :git => 'https://github.com/svipe/SvipeKit.git', :branch => :master
+  pod 'SvipeMRZ', :git => 'https://github.com/svipe/SvipeMRZ.git', :branch => :master
 
   #public
   pod 'ASN1Decoder',  :path => '../../../ASN1Decoder'
