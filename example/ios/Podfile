@@ -67,8 +67,8 @@ target 'SvipeAuthExample' do
   pod 'SvipeMRZ', :git => 'https://github.com/svipe/SvipeMRZ.git', :branch => :master
 
   #public
-  pod 'ASN1Decoder',  :path => '../../../ASN1Decoder'
-  #pod 'ASN1Decoder', :git => 'https://github.com/svipe/ASN1Decoder.git', :branch => :master
+  #pod 'ASN1Decoder',  :path => '../../../ASN1Decoder'
+  pod 'ASN1Decoder', :git => 'https://github.com/svipe/ASN1Decoder.git', :branch => :master
   pod 'SwiftyTesseract', :git => 'https://github.com/svipe/SwiftyTesseract.git', :branch => :master
   pod 'PotentCBOR', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
   pod 'PotentCodables', :git => 'https://github.com/svipe/PotentCodables.git', :branch => :master
