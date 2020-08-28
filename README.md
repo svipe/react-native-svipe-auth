@@ -23,6 +23,7 @@ Check out the example as well.
 ```
 $ npm install
 $ cd example
+$ npm install
 $ react-native run-ios
 ```
 
