@@ -24,6 +24,7 @@ Check out the example as well.
 $ npm install
 $ cd example
 $ npm install
+$ cd ios;pod install; cd ..
 $ react-native run-ios
 ```
 
